@@ -1,5 +1,8 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
+import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nextjs/components";
+
 
 const Header = () => {
   return (
@@ -46,7 +49,7 @@ const Header = () => {
             className="rounded-md px-5 py-2.5 text-sm font-medium text-white shadow"
             href="#"
           >
-            Login
+            <LoginLink postLoginRedirectURL="/dashboard">Login</LoginLink>
           </a>
 
           <div className="hidden sm:flex">
@@ -54,7 +57,7 @@ const Header = () => {
               className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-black hover:text-slate-600"
               href="#"
             >
-              Register
+             <RegisterLink>Register</RegisterLink> 
             </a>
           </div>
         </div>
