@@ -3,7 +3,6 @@ import Image from 'next/image'
 import React from 'react'
 import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nextjs/components";
 
-
 const Header = () => {
   return (
     <header className="bg-black">
@@ -17,48 +16,40 @@ const Header = () => {
         <nav aria-label="Global">
           <ul className="flex items-center gap-6 text-sm">
             <li>
-              <a className="text-white transition hover:text-gray-500/75" href="#"> About </a>
+              <a className="text-white transition hover:text-gray-500/75" href=""> About </a>
             </li>
 
             <li>
-              <a className="text-white transition hover:text-gray-500/75" href="#"> Careers </a>
+              <a className="text-white transition hover:text-gray-500/75" href=""> Careers </a>
             </li>
 
             <li>
-              <a className="text-white transition hover:text-gray-500/75" href="#"> History </a>
+              <a className="text-white transition hover:text-gray-500/75" href=""> History </a>
             </li>
 
             <li>
-              <a className="text-white transition hover:text-gray-500/75" href="#"> Services </a>
+              <a className="text-white transition hover:text-gray-500/75" href=""> Services </a>
             </li>
 
             <li>
-              <a className="text-white transition hover:text-gray-500/75" href="#"> Projects </a>
+              <a className="text-white transition hover:text-gray-500/75" href=""> Projects </a>
             </li>
 
             <li>
-              <a className="text-white transition hover:text-gray-500/75" href="#"> Blog </a>
+              <a className="text-white transition hover:text-gray-500/75" href=""> Blog </a>
             </li>
           </ul>
         </nav>
       </div>
 
       <div className="flex items-center gap-4">
-        <div className="sm:flex sm:gap-4">
-          <a
-            className="rounded-md px-5 py-2.5 text-sm font-medium text-white shadow"
-            href="#"
-          >
-            <LoginLink postLoginRedirectURL="/dashboard">Login</LoginLink>
-          </a>
-
-          <div className="hidden sm:flex">
-            <a
-              className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-black hover:text-slate-600"
-              href="#"
-            >
-             <RegisterLink>Register</RegisterLink> 
-            </a>
+          <div className="sm:flex sm:gap-4 rounded-md px-5 py-2.5 text-sm font-medium text-white shadow items-center justify-center">
+              <LoginLink postLoginRedirectURL="/dashboard">
+                {}
+                Login
+                </LoginLink>
+          <div className="hidden sm:flex  rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-black hover:text-slate-600">
+                <RegisterLink>Register</RegisterLink>
           </div>
         </div>
 
